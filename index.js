@@ -1,5 +1,4 @@
-// 1. REVERSE A LINKED LIST (Classic!)
-// Time: O(n), Space: O(1)
+// 1. REVERSE A LINKED LIST 
 function reverseList(head) {
     let prev = null;
     let current = head;
@@ -12,4 +11,20 @@ function reverseList(head) {
     }
     
     return prev;  // prev is now the new head
+}
+// DOUBLY LINKED LIST
+class node={
+    constructor(data){
+        this.data=data;
+        this.next=null;
+        this.prev=null;
+    }
+}
+// doubly linked list
+class DLL{ 
+    construcor(){
+        this.head=null;
+        this.tail=null;
+        this.size=0;
+    }
 }
