@@ -28,3 +28,23 @@ class DLL{
         this.size=0;
     }
 }
+//adding node at the end
+add(data){
+    let newNode=new node(data);
+    if(this.head=null){
+        this.head=newNode;
+        this.tail=newNode
+    } else{
+        this.tail.next=newNode;
+        newNode.prev=this.tail;
+        this.tail=newNode;
+    }
+} 
+// display list
+display(){
+    let current=this.head;
+    while(current){
+        console.log(current.data);
+        current=current.next;
+    } 
+}
