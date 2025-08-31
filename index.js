@@ -121,3 +121,10 @@ circularList.append(30);
 
 circularList.printList(); // Output: 5 -> 10 -> 20 -> 30 -> (back to head)
 }
+//recursion 
+fact (n){
+  if (n<=1){
+    return 1;
+  }
+  return fact(n-1)*n;
+}
