@@ -121,10 +121,28 @@ circularList.append(30);
 
 circularList.printList(); // Output: 5 -> 10 -> 20 -> 30 -> (back to head)
 }
-//recursion 
+//recursion factorial
 fact (n){
   if (n<=1){
     return 1;
   }
   return fact(n-1)*n;
 }
+// Stack adt using arrays
+class stack{
+  constructor(){
+    this.items=[];
+  }
+}
+// inserting first element into stack
+push (data){
+  this.items.push (data);
+}
+// removing element from stack
+Pop (){
+  if(this.isempty(){
+    return this.items.length===0;
+  })  return "satck empty";
+  return this.items.pop();
+}
+
