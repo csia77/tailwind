@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+//refresh on media queries
+@media screen {
+    padding: 500px;
+    
+}
