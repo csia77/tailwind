@@ -3,5 +3,7 @@
 //refresh on media queries
 @media screen {
     padding: 500px;
-    
+ p{
+    padding:50px
+ }   
 }
