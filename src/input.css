@@ -5,5 +5,9 @@
     padding: 500px;
  p{
     padding:50px
+ }
+ script{
+    color: burlywood;
+    background-color: aliceblue;
  }   
 }

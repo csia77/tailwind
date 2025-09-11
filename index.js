@@ -145,4 +145,12 @@ Pop (){
   })  return "satck empty";
   return this.items.pop();
 }
-
+// queue 
+class arrque={
+  constructor(){
+    this.items=[];
+  }
+}
+enqueue(elem){
+  this.items.push(elem);//adding element to back of the queue
+}
