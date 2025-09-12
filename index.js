@@ -154,3 +154,8 @@ class arrque={
 enqueue(elem){
   this.items.push(elem);//adding element to back of the queue
 }
+dequeue(){
+  if (this.isempty(){
+    return "empty queue"
+  }
+}
