@@ -159,3 +159,17 @@ dequeue(){
     return "empty queue"
   }
 }
+// This demonstrates the event loop in action
+console.log("Start"); // Runs immediately
+
+setTimeout(() => {
+    console.log("Timeout callback"); // Runs after other sync code
+}, 0);
+
+Promise.resolve().then(() => {
+    console.log("Promise callback"); // Runs before setTimeout (microtask priority)
+});
+
+console.log("End"); // Runs immediately after "Start"
+
+// Output: Start → End → Promise callback → Timeout callback
