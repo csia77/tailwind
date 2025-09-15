@@ -173,3 +173,33 @@ Promise.resolve().then(() => {
 console.log("End"); // Runs immediately after "Start"
 
 // Output: Start → End → Promise callback → Timeout callback
+// Basic GET with headers
+const response = await fetch('/api/projects', {
+  method: 'GET',
+  headers: {
+    'Authorization': 'Bearer ' + token,
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  }
+});
+
+// POST with data and specific options
+const response = await fetch('/api/projects', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer ' + token,
+  },
+  body: JSON.stringify({
+    title: 'My New Project',
+    description: 'Project description'
+  }),
+  credentials: 'include', // Include cookies
+  mode: 'cors' // Handle CORS
+});
+
+// Error handling
+if (!response.ok) {
+  throw new Error(`HTTP error! status: ${response.status}`);
+}
+const data = await response.json();
