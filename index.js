@@ -203,3 +203,20 @@ if (!response.ok) {
   throw new Error(`HTTP error! status: ${response.status}`);
 }
 const data = await response.json();
+// server/server.js
+// Chapter 1: Single Server Configuration
+// This server handles EVERYTHING - web pages, API, database, static files
+
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
+require('dotenv').config();
+
+// Initialize Express app
+const app = express();
+const PORT = process.env.PORT || 5000;
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
+
+
