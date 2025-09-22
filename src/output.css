@@ -165,3 +165,11 @@
     padding: calc(var(--spacing) * 4);
   }
 }
+@layer utilities {
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+}

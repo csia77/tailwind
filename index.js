@@ -212,11 +212,5 @@ const cors = require('cors');
 const path = require('path');
 require('dotenv').config();
 
-// Initialize Express app
-const app = express();
-const PORT = process.env.PORT || 5000;
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
 
 
