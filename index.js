@@ -116,8 +116,7 @@ class CircularLinkedList {
 const circularList = new CircularLinkedList();
 circularList.append(10);
 circularList.append(20);
-circularList.prepend(5);
-circularList.append(30);
+
 
 circularList.printList(); // Output: 5 -> 10 -> 20 -> 30 -> (back to head)
 }
@@ -207,6 +206,10 @@ const data = await response.json();
 // Chapter 1: Single Server Configuration
 // This server handles EVERYTHING - web pages, API, database, static files
 
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
