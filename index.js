@@ -210,10 +210,18 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
-require('dotenv').config();
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <p>{count}</p>
+      <button onClick={() => setCount(count + 1)}>+</button>
+    </div>
+  );
+}
+
+
 
 
 
