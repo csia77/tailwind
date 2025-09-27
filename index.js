@@ -217,6 +217,7 @@ function Counter() {
     <div>
       <p>{count}</p>
       <button onClick={() => setCount(count + 1)}>+</button>
+      console.log(button clicked);
     </div>
   );
 }
