@@ -1,3 +1,5 @@
+import { count } from 'console';
+
 // 1. REVERSE A LINKED LIST 
 function reverseList(head) {
     let prev = null;
@@ -217,10 +219,11 @@ function Counter() {
     <div>
       <p>{count}</p>
       <button onClick={() => setCount(count + 1)}>+</button>
-      console.log(button clicked);
+      
     </div>
   );
 }
+Counter();
 
 
 
